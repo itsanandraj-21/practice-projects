@@ -9,9 +9,9 @@ function renderTodoList()
 
 
    todoListHTML += `
-   <div>${todoList.name}</div>
-   <div>${todoList.dueDate}</div>
-   <button onclick="deleteTodo(${i})" >Delete</button>
+   <div>${todoListobject.name}</div>
+   <div>${todoListobject.dueDate}</div>
+   <button class="deletebtn" onclick="deleteTodo(${i})" >Delete</button>
    `;
   }
    document.querySelector('.js-todo-list').innerHTML=todoListHTML;
